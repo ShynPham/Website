@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phu Gia Pham | Software/AI Portfolio</title>
+    <meta
+      name="description"
+      content="Software and AI portfolio for Phu Gia Pham, featuring applied AI, ML, JavaFX, and full-stack projects."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" data-profile="name" href="#top">Phu Gia Pham</a>
+      <nav aria-label="Primary navigation">
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Applied AI / Software / Creative Systems</p>
+          <h1 data-profile="headline">I build applied AI, ML, and software systems that turn messy real-world problems into useful tools.</h1>
+          <p class="intro" data-profile="intro">
+            I like building practical systems with a little personality: tools that detect food from images, evaluate
+            clinical AI behavior, process sensor data, and make technical ideas easier to understand.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary magnetic" href="../software_ai_resume_template.docx">Download Resume</a>
+            <a class="button magnetic" href="#projects">Explore Projects</a>
+            <a class="button ghost magnetic" data-profile-link="github" href="https://github.com/ShynPham" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <div class="metrics" aria-label="Profile highlights">
+            <span><strong>40+</strong> STEM students weekly</span>
+            <span><strong>95%</strong> CV validation accuracy</span>
+            <span><strong>1,200+</strong> AI interactions daily</span>
+          </div>
+        </div>
+
+        <div class="hero-showcase">
+          <img src="assets/bitewise-food-scanner.png" alt="BiteWise food detection screen" />
+          <div class="floating-chip top">ONNX Runtime</div>
+          <div class="floating-chip bottom">JavaFX + AI</div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Stack</p>
+          <h2>Tools I use to build, evaluate, and ship technical work</h2>
+        </div>
+        <div class="skill-grid">
+          <article>
+            <span class="icon">01</span>
+            <h3>AI and ML</h3>
+            <p>PyTorch, Scikit-Learn, Azure OpenAI, OpenAI API, NLP evaluation, model bias analysis.</p>
+          </article>
+          <article>
+            <span class="icon">02</span>
+            <h3>Software</h3>
+            <p>Java, Python, C/C++, SQL, JavaScript, JavaFX, FastAPI, Flask, React, Next.js.</p>
+          </article>
+          <article>
+            <span class="icon">03</span>
+            <h3>Delivery</h3>
+            <p>Docker, Git, Jupyter, Google Cloud Platform, Hugging Face, data pipelines, documentation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="about-card color-card">
+          <div>
+            <p class="eyebrow">About Me</p>
+            <h2>Curious, technical, and happiest when an idea becomes a working system.</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I work across AI, software, and data-heavy projects, with a focus on building things that are useful,
+              testable, and easy to explain. My projects range from food-detection nutrition tools to clinical AI
+              bias evaluation pipelines.
+            </p>
+            <p>
+              I also spend a lot of time helping people understand code, math, algorithms, and debugging. That
+              teaching background shapes how I build: clear interfaces, readable logic, and practical explanations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="section-heading row">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>Selected proof of work</h2>
+          </div>
+          <div class="filter-bar" aria-label="Project filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="ai">AI/ML</button>
+            <button class="filter" data-filter="software">Software</button>
+            <button class="filter" data-filter="data">Data</button>
+          </div>
+        </div>
+        <div class="project-list">
+          <article class="project featured" data-project-index="0" data-tags="software ai data">
+            <img class="project-media" data-project-field="image" alt="BiteWise food scanner screenshot" />
+            <div>
+              <p class="project-kicker">Featured build</p>
+              <h3 data-project-field="name">BiteWise</h3>
+              <p data-project-field="description">
+                A JavaFX nutrition assistant that uses ONNX Runtime food detection to identify meals from images.
+              </p>
+              <p class="tech" data-project-field="tech">Java | JavaFX | ONNX Runtime | Maven | JSON</p>
+              <div class="card-actions">
+                <button class="button small open-gallery" type="button">View Screens</button>
+                <a class="button small ghost" href="../bitewise_case_study.md">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-project-index="1" data-tags="ai data">
+            <img class="project-media" data-project-field="image" alt="" hidden />
+            <div>
+              <p class="project-kicker">Research pipeline</p>
+              <h3 data-project-field="name">Clinical AI Bias Mitigation</h3>
+              <p data-project-field="description"></p>
+              <p class="tech" data-project-field="tech"></p>
+            </div>
+          </article>
+
+          <article class="project" data-project-index="2" data-tags="ai data">
+            <img class="project-media" data-project-field="image" alt="" hidden />
+            <div>
+              <p class="project-kicker">Signal processing</p>
+              <h3 data-project-field="name">Audio-Kinematic AI Pipeline</h3>
+              <p data-project-field="description"></p>
+              <p class="tech" data-project-field="tech"></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section gallery-section">
+        <div class="section-heading">
+          <p class="eyebrow">BiteWise Gallery</p>
+          <h2>More screenshots from the actual app</h2>
+        </div>
+        <div class="gallery-grid">
+          <button class="shot active" type="button" data-shot="assets/bitewise-food-scanner.png" data-caption="Food scanner with detected hamburger and fries.">
+            <img src="assets/bitewise-food-scanner.png" alt="BiteWise food scanner" />
+          </button>
+          <button class="shot" type="button" data-shot="assets/bitewise-coach-dashboard.png" data-caption="Coach dashboard with calorie goal, latest scan, and local nutrition insights.">
+            <img src="assets/bitewise-coach-dashboard.png" alt="BiteWise coach dashboard" />
+          </button>
+          <button class="shot" type="button" data-shot="assets/bitewise-smart-coach.png" data-caption="Smart coach recommendations based on scan history and nutrition goals.">
+            <img src="assets/bitewise-smart-coach.png" alt="BiteWise smart coach" />
+          </button>
+          <button class="shot" type="button" data-shot="assets/bitewise-goals.png" data-caption="Goal setup screen with manual calorie target and BMR calculator.">
+            <img src="assets/bitewise-goals.png" alt="BiteWise goals screen" />
+          </button>
+        </div>
+        <figure class="gallery-preview">
+          <img id="gallery-preview" src="assets/bitewise-food-scanner.png" alt="Selected BiteWise screenshot" />
+          <figcaption id="gallery-caption">Food scanner with detected hamburger and fries.</figcaption>
+        </figure>
+      </section>
+
+      <section id="resume" class="section resume-band">
+        <div>
+          <p class="eyebrow">Resume</p>
+          <h2>AI/ML and software engineering resume</h2>
+          <p>
+            Focused on applied AI research, Java/Python software projects, tutoring impact, and measurable technical outcomes.
+          </p>
+        </div>
+        <a class="button primary magnetic" href="../software_ai_resume_template.docx">Download Resume</a>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something useful</h2>
+        </div>
+        <div class="contact-links">
+          <a data-profile-link="email" href="mailto:phu.pham@my.utsa.edu">phu.pham@my.utsa.edu</a>
+          <a data-profile-link="linkedin" href="https://www.linkedin.com/in/PhuPham1" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a data-profile-link="github" href="https://github.com/ShynPham" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>(c) <span id="year"></span> <span data-profile="name">Phu Gia Pham</span>. Software/AI portfolio.</p>
+    </footer>
+
+    <script src="profile-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
