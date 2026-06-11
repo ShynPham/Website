@@ -74,6 +74,18 @@ document.querySelectorAll(".open-gallery").forEach((button) => {
   });
 });
 
+document.querySelectorAll("[data-resume-download]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const resumePath = link.getAttribute("href");
+    const isMobileBrowser = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (resumePath && isMobileBrowser) {
+      event.preventDefault();
+      window.open(resumePath, "_blank", "noopener");
+    }
+  });
+});
+
 document.querySelectorAll(".magnetic").forEach((button) => {
   button.addEventListener("pointermove", (event) => {
     const rect = button.getBoundingClientRect();
